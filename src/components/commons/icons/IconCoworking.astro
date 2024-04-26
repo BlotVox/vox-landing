@@ -1,0 +1,14 @@
+---
+interface Props {
+	className?: string;
+	color?: string;
+	size?: string;
+}
+
+const { className = "", color = "fill-red-800", size = "w-6 h-6" } = Astro.props;
+---
+
+<!-- ICON - COWORKING -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class={`${color} ${size} ${className}`} version="1.1" viewBox="0 0 24 24" xml:space="preserve">
+  <path d="M5,22H19a3,3,0,0,0,3-3V9a3,3,0,0,0-3-3H17V4a2,2,0,0,0-2-2H9A2,2,0,0,0,7,4V6H5A3,3,0,0,0,2,9V19A3,3,0,0,0,5,22ZM9,4h6V6H9ZM4,9A1,1,0,0,1,5,8H19a1,1,0,0,1,1,1V19a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1Zm2,3a1,1,0,0,1,1-1H17a1,1,0,0,1,0,2H7A1,1,0,0,1,6,12Zm0,4a1,1,0,0,1,1-1H17a1,1,0,0,1,0,2H7A1,1,0,0,1,6,16Z"/>
+</svg>

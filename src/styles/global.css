@@ -1,0 +1,151 @@
+@tailwind components;
+
+@layer components {
+  /* FONTS */
+  /* ----------------------------------- */
+  /* ----------------------------------- */
+  /* ----------------------------------- */
+
+  /* Monument Extended - Titulos */
+  @font-face {
+    font-family: "Monument Extended";
+    font-weight: normal;
+    src: url("/assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Monument Extended";
+    font-weight: bold;
+    src: url("/assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+  }
+
+  /* PP Formula - Subtitulos */
+  @font-face {
+    font-family: "PPFormula";
+    font-weight: lighter;
+    src: url("/assets/fonts/PPFormula-Light.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "PPFormula";
+    font-weight: normal;
+    src: url("/assets/fonts/PPFormula-Medium.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "PPFormula";
+    font-weight: bold;
+    src: url("/assets/fonts/PPFormula-Bold.otf") format("opentype");
+  }
+
+  /* Printvetica - Subtitulos secundarios */
+  @font-face {
+    font-family: "Printvetica";
+    font-weight: normal;
+    src: url("/assets/fonts/Printvetica.otf") format("opentype");
+  }
+
+  /* Actay - Textos (parrafos, etc.) */
+  @font-face {
+    font-family: "Actay";
+    font-weight: lighter;
+    src: url("/assets/fonts/ActayCondensed-Thin.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Actay";
+    font-weight: lighter;
+    font-style: italic;
+    src: url("/assets/fonts/ActayCondensed-ThinItalic.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Actay";
+    font-weight: normal;
+    src: url("/assets/fonts/Actay-Regular.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Actay";
+    font-weight: normal;
+    font-style: italic;
+    src: url("/assets/fonts/Actay-RegularItalic.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Actay";
+    font-weight: bold;
+    src: url("/assets/fonts/ActayWide-Bold.otf") format("opentype");
+  }
+  @font-face {
+    font-family: "Actay";
+    font-weight: bold;
+    font-style: italic;
+    src: url("/assets/fonts/ActayWide-BoldItalic.otf") format("opentype");
+  }
+
+  /* GLOBAL */
+  /* ----------------------------------- */
+  /* ----------------------------------- */
+  /* ----------------------------------- */
+  :root {
+    /* COLORS */
+    --color-trans: color 0.4s ease 0s;
+    --color-vox: #2b2b2b;
+    --color-vox-light: #b0b0b0;
+    --color-red: #c11b00;
+    --color-orange: #bb3800;
+    --color-green: #234044;
+    --color-earth: #8b7b69;
+    --color-air: #d9ccc1;
+    --color-white: #ffffff;
+    --color-black: #000000;
+
+    /* FONTS */
+    --font-family-title: 'Monument Extended', sans-serif;
+    --font-family-subtitle: 'PPFormula', sans-serif;
+    --font-family-subtitle-secondary: 'Printvetica', sans-serif;
+    --font-family-text: 'Actay', sans-serif;
+  }
+
+  body {
+    color: var(--color-vox);
+    background-color: var(--color-white);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-family-title);
+    color: var(--color-vox);
+    transition: var(--color-trans, color .4s ease 0s);
+
+    &.text-hover:hover {
+      color: var(--color-red);
+    }
+  }
+
+  input, textarea, span, b, p, a {
+    font-family: var(--font-family-text);
+    color: var(--color-vox);
+    transition: var(--color-trans, color .4s ease 0s);
+
+    &.text-hover:hover {
+      color: var(--color-red);
+    }
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-family: var(--font-family-text);
+    color: var(--color-vox-light);
+    transition: var(--color-trans, color .4s ease 0s);
+  }
+
+  .text-subtitle-secondary {
+    font-family: var(--font-family-subtitle-secondary);
+  }
+
+  .ic-arrow-top {
+    stroke-width: 0;
+    fill-opacity: 1;
+    stroke: var(--color-white);
+    stroke-opacity: 0;
+    fill: var(--color-red);
+    transform: rotate(270deg)
+  }
+
+}

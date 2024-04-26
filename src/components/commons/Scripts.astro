@@ -1,0 +1,29 @@
+<script src="https://unpkg.com/scrollreveal" is:inline></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.8/glider.min.js" integrity="sha512-AZURF+lGBgrV0WM7dsCFwaQEltUV5964wxMv+TSzbb6G1/Poa9sFxaCed8l8CcFRTiP7FsCgCyOm/kf1LARyxA==" crossorigin="anonymous" referrerpolicy="no-referrer" is:inline></script>
+<script is:inline>
+  var images = document.querySelector('.images');
+
+  if (images) {
+    // Animaciones de carrouseles
+    new Glider(images, {
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      draggable: true,
+      dots: '.dots',
+      arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+      }
+    });
+  }
+
+  // Animaciones al hacer scroll
+  ScrollReveal().reveal('.animate__animated', {
+    delay: 200,
+    distance: '50px',
+    origin: 'bottom',
+    easing: 'ease-in-out',
+    interval: 100
+  });
+</script>

@@ -1,0 +1,84 @@
+---
+import Header from "../commons/Header.astro";
+import Footer from "../commons/Footer.astro";
+import Scripts from "../commons/Scripts.astro";
+import Service from "./Service.astro";
+import IconCoworking from "../commons/icons/IconCoworking.astro";
+import IconCoffee from "../commons/icons/IconCoffee.astro";
+---
+
+<!-- EL VOX -->
+<div id="el-vox">
+  <Header className="p-6 md:py-3 md:py-1 bg-vox-950" />
+
+  <main class="container mx-auto mt-24 flex flex-col items-center justify-center space-y-24">
+    <div class="flex items-center justify-center w-full text-center">
+      <h1 class="text-3xl md:text-5xl text-center text-hover mb-0">El VÖX</h1>
+    </div>
+
+    <div class="flex items-center justify-center w-full text-center">
+      <h2 class="text-1xl md:text-3xl text-center text-hover mb-0">Instalaciones</h2>
+    </div>
+
+    <div class="hidden images-container">
+      <div class="images">
+        <div><img src="/assets/media/img/images/image-01.webp" alt="imagen 01" class="w-[300px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-02.jpg" alt="imagen 02" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-03.webp" alt="imagen 03" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-04.jpg" alt="imagen 04" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-01.webp" alt="imagen 01" class="w-[300px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-02.jpg" alt="imagen 02" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-03.webp" alt="imagen 03" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-04.jpg" alt="imagen 04" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-01.webp" alt="imagen 01" class="w-[300px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-02.jpg" alt="imagen 02" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-03.webp" alt="imagen 03" class="w-[250px] h-[250px]" /></div>
+        <div><img src="/assets/media/img/images/image-04.jpg" alt="imagen 04" class="w-[250px] h-[250px]" /></div>
+      </div>
+    
+      <button aria-label="Anterior" class="glider-prev">«</button>
+      <button aria-label="Siguiente" class="glider-next">»</button>
+      <div role="tablist" class="dots"></div>
+    </div>
+
+    <div class="flex items-center justify-center w-full text-center">
+      <h2 class="text-1xl md:text-3xl text-center text-hover mb-0">Servicios</h2>
+    </div>
+
+    <div class="services grid grid-cols-2 md:grid-cols-3 gap-4 place-items-center place-content-center">
+      <Service title="Co-Working">
+        <IconCoworking />
+      </Service>
+      <Service title="Coffee">
+        <IconCoffee />
+      </Service>
+      <Service title="SPA">
+        <IconCoworking />
+      </Service>
+      <Service title="Outdoor">
+        <IconCoworking />
+      </Service>
+      <Service title="Vestuarios">
+        <IconCoworking />
+      </Service>
+      <Service title="Show Rooms">
+        <IconCoworking />
+      </Service>
+      <Service title="Nutrición">
+        <IconCoworking />
+      </Service>
+      <Service title="Play Room">
+        <IconCoworking />
+      </Service>
+      <Service title="Studio">
+        <IconCoworking />
+      </Service>
+      <Service title="Adaptative Training">
+        <IconCoworking />
+      </Service>
+    </div>
+  </main>
+
+  <Footer/>
+  <Scripts/>
+</div>

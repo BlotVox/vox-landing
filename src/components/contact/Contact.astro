@@ -1,0 +1,60 @@
+---
+import Header from "../commons/Header.astro";
+import Footer from "../commons/Footer.astro";
+import Scripts from "../commons/Scripts.astro";
+---
+
+<!-- CONTACT -->
+<div id="contact">
+  <Header className="p-6 md:py-3 md:py-1 bg-vox-950" />
+
+  <main class="container mx-auto mt-24 flex flex-col items-center justify-center space-y-24">
+    <div class="flex items-center justify-center w-full text-center">
+      <h1 class="text-3xl md:text-5xl text-center text-hover mb-0">Contacto</h1>
+    </div>
+
+    <section class="flex flex-col md:flex-row items-start justify-between space-x-0 md:space-y-0 md:space-x-24 w-full px-0 md:px-14">
+      <div class="w-full md:w-2/4 h-[360px] order-2 md:order-1 mt-24 md:mt-0">
+        <iframe class="border-none w-full h-full" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDvsne-xQTXi8EyW9yCTQefdi11DMpUt8&amp;q=Av.+Constituyentes+1235%2C+B1617+Gral.+Pacheco%2C+Provincia+de+Buenos+Aires"></iframe>
+      </div>
+
+      <div class="flex flex-col items-start justify-center space-y-6 w-full md:w-2/4 order-1 md:order-2 px-6 md:px-0">
+        <div class="flex flex-col items-start justify-center w-full">
+          <label class="text-sm text-left text-vox-950 text-hover" for="name">Nombre</label>
+          <input class="text-sm text-left text-vox-950 border rounded-sm p-1 mt-1 w-full md:w-2/4" type="text" placeholder="Jose Canseco..." value="" />
+        </div>
+        <div class="flex flex-col items-start justify-center w-full">
+          <label class="text-sm text-left text-vox-950 text-hover" for="name">Correo Electrónico</label>
+          <input class="text-sm text-left text-vox-950 border rounded-sm p-1 mt-1 w-full md:w-2/4" type="email" placeholder="jose.canseco@gmail.com..." value="" />
+        </div>
+        <div class="flex flex-col items-start justify-center w-full">
+          <label class="text-sm text-left text-vox-950 text-hover" for="name">Mensaje</label>
+          <textarea class="text-sm text-left text-vox-950 border rounded-sm p-1 mt-1 w-full md:w-3/4" rows="5" placeholder="Hola soy Jose Canseco y me interesa..."></textarea>
+        </div>
+        <div class="flex flex-col items-start justify-center w-full">
+          <button type="button" class="bg-transparent hover:bg-vox-950 text-vox-950 font-semibold hover:text-white py-2 px-4 border border-vox-950 hover:border-transparent rounded">Enviar</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row items-start justify-between space-x-0 md:space-y-0 md:space-x-24 w-full px-6 md:px-0">
+      <div class="flex justify-start md:justify-end self-start md:self-end w-full md:w-2/4">
+        <p class="text-sm text-left text-vox-950 text-hover w-auto">
+          <b>VÖX</b>
+          <br/>Av. Constituyentes 1235,
+          <br/>B1617 Gral. Pacheco, Provincia de Buenos Aires
+          <br/>Tel: +5491125642067
+        </p>
+      </div>
+      <p class="text-sm text-left text-vox-950 text-hover self-start w-full md:w-2/4 mt-12 md:mt-0">
+        <b>Horarios</b>
+        <br/>Lunes - Viernes: 07:00 - 22:00
+        <br/>Sábado: 07:00 - 13:00
+        <br/>Domingo: 07:00 - 12:00 
+      </p>
+    </section>
+  </main>
+
+  <Footer/>
+  <Scripts/>
+</div>

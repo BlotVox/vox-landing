@@ -1,0 +1,15 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!-- SERVICE -->
+<div class="bg-transparent hover:bg-vox-950 text-vox-950 font-semibold hover:text-white py-2 px-4 border border-vox-950 hover:border-transparent rounded w-full">
+  <div class="flex items-center justify-start p-3 space-x-2">
+    <slot />
+    <p class="text-1xl md:text-2xl text-left text-subtitle-secondary hover:text-white">{title}</p>
+  </div>
+</div>
