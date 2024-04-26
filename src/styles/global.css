@@ -10,71 +10,71 @@
   @font-face {
     font-family: "Monument Extended";
     font-weight: normal;
-    src: url("/assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/MonumentExtended-Regular.otf") format("opentype");
   }
   @font-face {
     font-family: "Monument Extended";
     font-weight: bold;
-    src: url("/assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
   }
 
   /* PP Formula - Subtitulos */
   @font-face {
     font-family: "PPFormula";
     font-weight: lighter;
-    src: url("/assets/fonts/PPFormula-Light.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/PPFormula-Light.otf") format("opentype");
   }
   @font-face {
     font-family: "PPFormula";
     font-weight: normal;
-    src: url("/assets/fonts/PPFormula-Medium.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/PPFormula-Medium.otf") format("opentype");
   }
   @font-face {
     font-family: "PPFormula";
     font-weight: bold;
-    src: url("/assets/fonts/PPFormula-Bold.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/PPFormula-Bold.otf") format("opentype");
   }
 
   /* Printvetica - Subtitulos secundarios */
   @font-face {
     font-family: "Printvetica";
     font-weight: normal;
-    src: url("/assets/fonts/Printvetica.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/Printvetica.otf") format("opentype");
   }
 
   /* Actay - Textos (parrafos, etc.) */
   @font-face {
     font-family: "Actay";
     font-weight: lighter;
-    src: url("/assets/fonts/ActayCondensed-Thin.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/ActayCondensed-Thin.otf") format("opentype");
   }
   @font-face {
     font-family: "Actay";
     font-weight: lighter;
     font-style: italic;
-    src: url("/assets/fonts/ActayCondensed-ThinItalic.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/ActayCondensed-ThinItalic.otf") format("opentype");
   }
   @font-face {
     font-family: "Actay";
     font-weight: normal;
-    src: url("/assets/fonts/Actay-Regular.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/Actay-Regular.otf") format("opentype");
   }
   @font-face {
     font-family: "Actay";
     font-weight: normal;
     font-style: italic;
-    src: url("/assets/fonts/Actay-RegularItalic.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/Actay-RegularItalic.otf") format("opentype");
   }
   @font-face {
     font-family: "Actay";
     font-weight: bold;
-    src: url("/assets/fonts/ActayWide-Bold.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/ActayWide-Bold.otf") format("opentype");
   }
   @font-face {
     font-family: "Actay";
     font-weight: bold;
     font-style: italic;
-    src: url("/assets/fonts/ActayWide-BoldItalic.otf") format("opentype");
+    src: url("/vox-landing/assets/fonts/ActayWide-BoldItalic.otf") format("opentype");
   }
 
   /* GLOBAL */
