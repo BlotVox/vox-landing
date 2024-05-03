@@ -2,12 +2,13 @@
 interface Props {
   subtitle: string;
   align?: string;
+  className?: string;
 }
 
-const { subtitle, align = "center" } = Astro.props;
+const { subtitle, align = "center", className = "" } = Astro.props;
 ---
 
 <!-- SUBTITLE -->
 <div class={`flex items-${align} justify-${align} w-full text-${align}`}>
-  <h2 class="text-1xl md:text-3xl text-center text-hover mb-0">{subtitle}</h2>
+  <h2 class={`text-1xl md:text-3xl text-center text-hover mb-0 ${className}`}>{subtitle}</h2>
 </div>

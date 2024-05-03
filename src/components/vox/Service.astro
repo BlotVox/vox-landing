@@ -7,9 +7,9 @@ const { title } = Astro.props;
 ---
 
 <!-- EL VOX - SERVICES - SERVICE -->
-<div class="bg-transparent shadow-lg text-vox-950 font-semibold py-2 px-4 border border-vox-950 rounded w-full">
+<div class="bg-transparent shadow-lg text-vox-950 py-2 px-4 border border-vox-950 rounded w-full">
   <div class="flex flex-col items-center justify-center p-3 space-y-4">
     <slot />
-    <p class="text-1xl md:text-2xl text-left text-subtitle-secondary">{title}</p>
+    <p class="text-1xl md:text-2xl text-left">{title}</p>
   </div>
 </div>
