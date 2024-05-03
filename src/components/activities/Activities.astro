@@ -1,0 +1,50 @@
+---
+import Header from "../commons/layout/Header.astro";
+import Footer from "../commons/layout/Footer.astro";
+import Title from "../commons/displayers/Title.astro";
+import List from "./List.astro";
+---
+
+<!-- ACTIVITIES -->
+<div id="activities">
+  <Header className="p-6 md:py-3 md:py-1 bg-vox-950" />
+
+  <main class="container mx-auto mt-24 flex flex-col items-center justify-center space-y-10">
+    <Title title="Actividades" />
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center place-content-center">
+      <List title="BLÖT Training" items={[
+        "GAP",
+        "HIIT",
+        "Funcional",
+        "BLÖT Program",
+        "Personalizado",
+      ]} />
+      <List title="Artes Marciales" items={[
+        "Taekwon-Do",
+        "Jiu Jitsu",
+        "Boxeo Recreacional"
+      ]} />
+      <List title="Strengt Zone" items={[
+        "Musculación",
+        "Power Lifting",
+        "Weigh Lifting"
+      ]} />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center place-content-center">
+      <List title="Flex" items={[
+        "Yoga",
+        "Stretching"
+      ]} />
+      <List title="Kids" items={[
+        "Runing",
+        "Adaptative",
+        "Gimnasia Acro",
+        "Calistenia"
+      ]} />
+    </div>
+  </main>
+
+  <Footer/>
+</div>

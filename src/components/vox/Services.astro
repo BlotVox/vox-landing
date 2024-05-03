@@ -1,0 +1,52 @@
+---
+import SubTitle from "../commons/displayers/SubTitle.astro";
+import IconChangingRoom from "../commons/icons/IconChangingRoom.astro";
+import IconCoworking from "../commons/icons/IconCoworking.astro";
+import IconNutrition from "../commons/icons/IconNutrition.astro";
+import IconPlayRoom from "../commons/icons/IconPlayRoom.astro";
+import IconShowRoom from "../commons/icons/IconShowRoom.astro";
+import IconTraining from "../commons/icons/IconTraining.astro";
+import IconOutdoor from "../commons/icons/IconOutdoor.astro";
+import IconStudio from "../commons/icons/IconStudio.astro";
+import IconCoffee from "../commons/icons/IconCoffee.astro";
+import IconSpa from "../commons/icons/IconSpa.astro";
+import Service from "./Service.astro";
+---
+
+<!-- EL VOX - SERVICES -->
+<div class="container mx-auto mt-24 flex flex-col items-center justify-center space-y-24">
+  <SubTitle subtitle="Servicios" />
+
+  <div class="services grid grid-cols-2 md:grid-cols-4 gap-4 place-items-center place-content-center px-6 md:px-0">
+    <Service title="Coworking">
+      <IconCoworking />
+    </Service>
+    <Service title="Coffee">
+      <IconCoffee />
+    </Service>
+    <Service title="SPA">
+      <IconSpa />
+    </Service>
+    <Service title="Outdoor">
+      <IconOutdoor />
+    </Service>
+    <Service title="Vestuarios">
+      <IconChangingRoom />
+    </Service>
+    <Service title="Show Rooms">
+      <IconShowRoom />
+    </Service>
+    <Service title="Nutrición">
+      <IconNutrition />
+    </Service>
+    <Service title="Play Room">
+      <IconPlayRoom />
+    </Service>
+    <Service title="Studio">
+      <IconStudio />
+    </Service>
+    <Service title="Adaptative Training">
+      <IconTraining />
+    </Service>
+  </div>
+</div>

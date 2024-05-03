@@ -1,0 +1,22 @@
+---
+import SubTitle from '../commons/displayers/SubTitle.astro';
+import Item from './Item.astro';
+
+interface Props {
+	title: string;
+	items: string[];
+}
+
+const { title, items } = Astro.props;
+---
+
+<!-- ACTIVITIES - LIST -->
+<div class="flex flex-col justify-start bg-transparent shadow-lg text-vox-950 py-6 px-8 border border-vox-950 rounded h-[270px]">
+  <SubTitle subtitle={title} align="start" />
+
+  <ul class="list-disc list-inside mt-6 marker:text-red-800">
+    {items.map((item) => (
+      <Item text={item} />
+    ))}
+  </ul>
+</div>

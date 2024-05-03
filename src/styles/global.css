@@ -106,13 +106,13 @@
   body {
     color: var(--color-vox);
     background-color: var(--color-white);
+    font-family: var(--font-family-text);
   }
 
   h1,
   h2,
   h3 {
     font-family: var(--font-family-title);
-    color: var(--color-vox);
     transition: var(--color-trans, color .4s ease 0s);
 
     &.text-hover:hover {
@@ -121,8 +121,6 @@
   }
 
   input, textarea, span, b, p, a {
-    font-family: var(--font-family-text);
-    color: var(--color-vox);
     transition: var(--color-trans, color .4s ease 0s);
 
     &.text-hover:hover {
@@ -135,6 +133,10 @@
     font-family: var(--font-family-text);
     color: var(--color-vox-light);
     transition: var(--color-trans, color .4s ease 0s);
+  }
+
+  .ki-duotone span {
+    font-family: keenicons-duotone !important;
   }
 
   .text-subtitle-secondary {

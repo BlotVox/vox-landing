@@ -1,0 +1,27 @@
+---
+interface Props {
+  name: string;
+  paths?: number;
+  classNameContainer?: string;
+  className?: string;
+  color?: string;
+  size?: string;
+}
+
+const {
+  name,
+  paths = 1,
+  classNameContainer = "",
+  className = "",
+  color = "text-red-800",
+  size = "w-6 h-6",
+} = Astro.props;
+---
+
+<div class={`flex items-center justify-center rounded ${size} ${classNameContainer}`}>
+  <i class={`ki-duotone ki-${name} text-2xl ${color} ${size} ${className}`}>
+    {Array(paths).fill("").map((_, i) => (
+      <span class={`path${i + 1}`}></span>
+    ))}
+  </i>
+</div>
